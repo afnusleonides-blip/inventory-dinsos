@@ -22,6 +22,8 @@ return new class extends Migration
 
             $table->date('tanggal');
 
+            $table->softDeletes();
+
             $table->text('keterangan')->nullable();
 
             $table->timestamps();
